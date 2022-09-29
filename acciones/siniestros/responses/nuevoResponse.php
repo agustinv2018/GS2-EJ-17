@@ -3,5 +3,5 @@
 class NuevoResponse
 {
     public $IsOk;
-    public $Mensaje;
+    public $Mensaje = array();
 }

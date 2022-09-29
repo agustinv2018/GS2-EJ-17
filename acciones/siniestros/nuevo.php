@@ -32,7 +32,7 @@ $cantmedios = 0;
 foreach ($req->ListMediosContacto as $c) {
     $cantmedios =  $cantmedios + 1;
 }
-if ($cantmedios < 0) {
+if ($cantmedios <= 0) {
     $resp->IsOk = false;
     $resp->Mensaje = 'Debe indicar al menos un medio de contacto';
 }
